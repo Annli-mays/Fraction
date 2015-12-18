@@ -1,0 +1,62 @@
+public class Fraction {
+	int num;
+	int denom;
+
+	public java.lang.String toString(){
+		
+		return num+"/"+denom;
+	}
+	
+	public boolean sravn (Fraction f2)
+	{
+		if(num>f2.num && denom<f2.denom)
+			return true;
+			return false;
+	}
+	public java.lang.String Summ(Fraction f2)
+	{
+		int k1 = num*f2.denom + f2.num*denom;;
+		int k2 = f2.denom*denom;
+		
+		return k1 + "/" + k2;
+	}
+	public java.lang.String Minus(Fraction f2)
+	{
+		int k1 = num*f2.denom - f2.num*denom;;
+		int k2 = f2.denom*denom;
+		
+		return k1 + "/" + k2;
+	}
+	public java.lang.String Muiltiply(Fraction f2)
+	{
+		int k1 = num*f2.num;
+		int k2 = denom*f2.denom;
+		return k1 + "/" + k2;
+	}
+	public java.lang.String Del(Fraction f2)
+	{
+		int k1 = num*f2.denom;
+		int k2 = denom*f2.num;
+		return k1 + "/" + k2;
+
+	}
+	
+	public String sokr(){
+		for (int i = Math.max(num, denom); i>=Math.min(num, denom);i--){
+			if (num%i==0 && denom%i==0)
+			{
+				num = num/i;
+				denom = denom/i;
+				break;
+		
+			}
+
+			
+		}
+		return num + "/"+ denom;
+		
+		
+	}
+	
+
+}
