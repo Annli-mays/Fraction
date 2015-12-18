@@ -1,0 +1,26 @@
+public class main {
+
+	public static void main(String[] args) {
+		
+		Fraction f1 = new Fraction();
+		Fraction f2 = new Fraction();
+	
+		
+		//значения
+		f1.num = 2;
+		f1.denom = 4;
+		
+		f2.num = 1;
+		f2.denom = 6;
+		
+		System.out.println(f1 +"  "+ f2);
+		System.out.println(f1 +" = "+f1.sokr());
+		System.out.println(f1+" > "+f2+" - "+f1.sravn(f2));
+		System.out.println(f1 +" + "+f2+" = "+f1.Summ(f2));
+		System.out.println(f1 +" - "+f2+" = "+f1.Minus(f2));
+		System.out.println(f1 +" * "+f2+" = "+f1.Muiltiply(f2));
+		System.out.println(f1 +" / "+f2+" = "+f1.Del(f2));
+
+	}
+
+}
